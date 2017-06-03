@@ -16,4 +16,12 @@ class DefaultController extends Controller
     public function indexAction() {
         return array();
     }
+
+    /**
+     * @Route("/que-chin00-es-esto", name="about")
+     * @Template("AppBundle:about:index.html.twig")
+     */
+    public function aboutAction() {
+        return array();
+    }
 }

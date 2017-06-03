@@ -1,3 +1,11 @@
+	/*	GENERAL	*/
+body{
+	font-family: 'Ek Mukta', sans-serif;
+	background-color: #1e1e1e; 
+	color: #fff;
+	
+}
+
 .m-t-5{
 	margin-top: 5%;
 }
@@ -7,9 +15,50 @@
 }
 
 .m-b-5{
-	margin-top: 5%;
+	margin-botom: 5%;
 }
 
 .m-b-3{
-	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+	/*		HOME	*/ 
+
+.home-c img{
+	margin: auto;
+	border-radius: 5px;	
+}
+
+.home-c img:hover{
+    -webkit-filter: none;
+	filter: none;
+}
+
+	/*	EFFECTS	*/
+
+.fx-blur{
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	transition: filter 2s;
+}
+
+.fx-saturate{
+	-webkit-filter: saturate(800%); /* Safari */
+    filter: saturate(800%);
+    transition: filter 2s;
+}
+
+.fx-violet{
+	-webkit-filter: hue-rotate(90deg); /* Safari */
+    filter: hue-rotate(90deg);
+    transition: filter 2s;
+}
+
+.fx-opacity{
+	 -webkit-filter: grayscale(100%); /* Safari */
+    filter: grayscale(100%);
+    transition: filter 2s;
 }

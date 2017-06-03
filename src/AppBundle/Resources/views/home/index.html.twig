@@ -4,7 +4,32 @@
 
 <div class="container">
 	
-	<h1 class="text-center">Ready to use Congal!</h1>
+	{% set keyFx =  random(3) %}
+	{% if keyFx == 0 %}
+		{% set imgFx = "fx-blur" %}
+		<h1 class="text-center">Nada como un a<strong>guarras</strong></h1>
+	{% elseif keyFx == 1 %}
+		{% set imgFx = "fx-saturate" %}
+		<h1 class="text-center">¡Ponte la <strong>ramera</strong> con nosotros! ¿o era con "e"?</h1>
+	{% elseif keyFx == 2 %}
+		{% set imgFx = "fx-violet" %}
+		<h1 class="text-center">Solo tú te deses<strong>perras</strong></h1>
+	{% elseif keyFx == 3 %}
+		{% set imgFx = "fx-opacity" %}
+		<h1 class="text-center">Hay que prender la fo<strong>gata</strong></h1>
+	{% endif %}
+
+	
+
+	
+
+	<div class="col-md-8 col-md-offset-2 m-t-5 home-c">
+		{% image '@AppBundle/Resources/public/images/home/home.jpg'%}
+    		<img src="{{ asset_url }}" alt="Bienvenidos" class="img-responsive {{imgFx}}" />
+		{% endimage %}
+	</div>
+
+
 
 </div>
 
